@@ -1,0 +1,22 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1>Quotes Board</h1>
+    <p>Post your favorite quotes, pass the light here.</p>
+  </div>
+</div>
+<div>
+  <div class="container">
+    <div *ngFor='let quote of quotes; let i=index'>
+      <div class="container">
+        <div class="container">
+          <h6 id="{{i}}">{{quote.body}}</h6>
+          <button class="btn btn-success" (click)='toggleDetails(i)'>Details</button>
+        </div>
+
+        <div>
+          <app-quote-details *ngIf="quote.showPublisher" [quote]='quote'></app-quote-details>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
