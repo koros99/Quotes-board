@@ -12,7 +12,7 @@
   margin-bottom: 2%;
 }
 .register{
-  position: fixed;
+  position: absolute;
   top: 60%;
   right: 2%;
 }
