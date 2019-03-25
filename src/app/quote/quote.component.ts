@@ -9,8 +9,8 @@ import {Quote} from '../quote'
 export class QuoteComponent implements OnInit {
 
   quotes = [
-    new Quote(1,"If you think you can, you can. If you think you can't, you're right.", "Kelvin Kilel", "Victor Kilel"),
-    new Quote(1,"Give me six hours to chop down a tree, I'll spend the first four sharpening my axe.", "Abraham Lincoln", "Victor Kilel"),
+    new Quote(1,"If you think you can, you can. If you think you can't, you're right.", "Kelvin Kilel", "Victor Kilel", new Date(2019, 2, 23), 0, 0),
+    new Quote(1,"Give me six hours to chop down a tree, I'll spend the first four sharpening my axe.", "Abraham Lincoln", "Victor Kilel", new Date(2019, 2, 23), 0, 0),
 
   ]
 

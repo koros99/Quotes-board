@@ -1,1 +1,8 @@
-
+#quotesform{
+  float: right;
+  margin-top: -13%;
+  padding: 2%;
+  position: absolute;
+  right: 0;
+  background-color: rgb(147, 163, 188);
+}

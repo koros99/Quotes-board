@@ -11,6 +11,12 @@ export class QuoteDetailsComponent implements OnInit {
   @Input() quote:Quote;
   @Output() isComplete= new EventEmitter<boolean>();
 
+  like(quote){
+
+  }
+  unlike(quote){
+    
+  }
   quoteDelete(complete:boolean){
     this.isComplete.emit(complete);
   }

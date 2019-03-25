@@ -6,3 +6,13 @@
   color: #e0e2e5;
   text-align: center;
 }
+.quote{
+  background-color: rgb(147, 163, 188);
+  padding: 1.5%;
+  margin-bottom: 2%;
+}
+.register{
+  position: fixed;
+  top: 60%;
+  right: 2%;
+}
