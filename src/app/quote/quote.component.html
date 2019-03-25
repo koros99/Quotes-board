@@ -18,9 +18,12 @@
         </div>
 
         <div>
-          <app-quote-details *ngIf="quote.showPublisher" [quote]='quote'></app-quote-details>
+          <app-quote-details *ngIf="quote.showPublisher" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
         </div>
       </div>
     </div>
+  </div>
+  <div class="container">
+    <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>
   </div>
 </div>
