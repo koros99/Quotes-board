@@ -12,10 +12,10 @@ export class QuoteDetailsComponent implements OnInit {
   @Output() isComplete= new EventEmitter<boolean>();
 
   like(quote){
-    this.quote.likes= likes ++;
+    quote.likes+= 1;
   }
   unlike(quote){
-    this.quote.unlikes= unlikes ++;
+    quote.unlikes+= 1;
   }
   quoteDelete(complete:boolean){
     this.isComplete.emit(complete);
