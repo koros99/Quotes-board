@@ -7,15 +7,13 @@
 <div>
   <div class="container">
     <div *ngFor='let quote of quotes; let i=index'>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="quote">
-              <h6 id="{{i}}">{{quote.body}}</h6>
-              <button class="btn btn-success" (click)='toggleDetails(i)'>Details</button>
-              <div>
-                <app-quote-details *ngIf="quote.showPublisher" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
-              </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="quote">
+            <h6 id="{{i}}">{{quote.body}}</h6>
+            <button class="btn btn-success" (click)='toggleDetails(i)'>Details</button>
+            <div>
+              <app-quote-details *ngIf="quote.showPublisher" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
             </div>
           </div>
         </div>
