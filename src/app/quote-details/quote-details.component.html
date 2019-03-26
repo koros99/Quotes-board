@@ -1,17 +1,10 @@
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6">
-      <div class="quote">
-        <p>~By {{quote.author}}</p>
-        <p>Posted by {{quote.publisher}} <span>{{quote.date|dateCount}}</span></p>
-        <p>Likes: {{quote.likes}}</p>
-        <p>Unlikes: {{quote.unlikes}}</p>
-        <p>Posted on {{quote.date|date}}</p>
-        <button class="btn btn-danger" (click)='quoteDelete(true)'>Delete</button>
-        <button class="btn btn-info" (click)='like(quote)'>Like</button>
-        <button class="btn btn-warning" (click)='unlike(quote)'>Unlike</button>
-        <img href="src/images/like.png" height="20">
-      </div>
-    </div>
-  </div>
+<p>~By {{quote.author}}</p>
+<p>Posted by {{quote.publisher}} <span>{{quote.date|dateCount}}</span></p>
+<p>Likes: {{quote.likes}}</p>
+<p>Unlikes: {{quote.unlikes}}</p>
+<p>Posted on {{quote.date|date}}</p>
+<div class="card-footer">
+  <button class="btn btn-danger" (click)='quoteDelete(true)'>Delete</button>
+  <button class="btn btn-info" (click)='like(quote)'>Like</button>
+  <button class="btn btn-warning" (click)='unlike(quote)'>Unlike</button>
 </div>
